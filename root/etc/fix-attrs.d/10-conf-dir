@@ -1,0 +1,4 @@
+###!/usr/bin/with-contenv bash
+
+/var/cache/squid true abc 755 755
+/var/log/squid true abc 755 755

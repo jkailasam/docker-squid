@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+cd /config
+#exec s6-setuidgid abc squid -NYCd 1
+exec squid -NYCd 1
+

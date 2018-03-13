@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bash
+
+# Ensure permissions are set correctly on the Squid cache + log dir.
+# chown -R abc:abc /var/cache/squid
+# chown -R abc:abc /var/log/squid
+# Prepare the cache using Squid.
+echo "Initializing cache..."
+squid -z
+
+# Give the Squid cache some time to rebuild.
+sleep 5
